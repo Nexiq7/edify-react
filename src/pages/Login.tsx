@@ -15,7 +15,7 @@ function Login() {
                                    >
                                         <div className="flex flex-wrap items-center gap-3">
                                              <FcGoogle className="text-2xl" />
-                                             <span className="text-black font-medium">Log in with Google</span>
+                                             <a href={`${import.meta.env.VITE_BACKEND_URL}/auth/google`}><span className="text-black font-medium">Log in with Google</span></a>
                                         </div>
                                    </button>
                               </div>
