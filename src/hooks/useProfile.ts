@@ -7,7 +7,7 @@ export function useProfile(): User | null {
      useEffect(() => {
           const fetchProfile = async () => {
                try {
-                    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/profile`, { credentials: "include" })
+                    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/profile`, { credentials: "include" })
                     const data = await response.json();
                     setUser(data);
                } catch (error) {
