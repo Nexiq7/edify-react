@@ -1,8 +1,7 @@
-import { ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 
 interface SidebarIconProps {
-  icon: ReactNode;
+  icon: any;
   path: string;
 }
 
