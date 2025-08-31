@@ -49,7 +49,7 @@ function Board() {
                setShowModal(false);
                setVideoId("");
           } catch (error) {
-               console.log("Error adding video:", error);
+               console.log("Error adding edit:", error);
           }
      };
 
@@ -64,7 +64,7 @@ function Board() {
                });
                navigate("/profile")
           } catch (error) {
-               console.log("Error adding video:", error);
+               console.log("Error deleting board:", error);
           }
      };
 
@@ -81,7 +81,7 @@ function Board() {
                setBoardLiked(data.liked);
                setLikeId(data.likeId);
           } catch (error) {
-               console.log("Error adding video:", error);
+               console.log("Error checking board like status:", error);
           }
      };
 
@@ -209,7 +209,7 @@ function Board() {
                               <input
                                    type="text"
                                    className="text-black border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-                                   placeholder="Youtube Video URL"
+                                   placeholder="Youtube Edit URL (only YouTube supported)"
                                    value={videoId}
                                    onChange={e => setVideoId(e.target.value)}
                               />
