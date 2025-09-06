@@ -2,6 +2,8 @@
 
 Edify is a modern web application that allows users to discover, create, and share collections of edits. Users can organize their favorite edits into themed boards, discover content from other creators, and build a personalized library of edit collections. Currently, only YouTube is supported as a video source.
 
+![Example Board](src/assets/board.png)
+
 ## Features
 
 ### User Management
